@@ -4,6 +4,15 @@
   </div>
 </template>
 
+<script lang="ts">
+import {Component, Vue, Watch} from "vue-facing-decorator"
+
+@Component
+export default class AboutView extends Vue {
+
+}
+</script>
+
 <style>
 @media (min-width: 1024px) {
   .about {
