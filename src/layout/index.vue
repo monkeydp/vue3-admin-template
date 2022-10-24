@@ -1,15 +1,13 @@
 <template>
   <div class="layout">
-    <div class="navbar">
-      导航
-    </div>
+    <Navbar/>
 
     <div class="content">
-      <div class="content-header">头部</div>
+      <Header/>
       <main class="content-main">
         <router-view/>
       </main>
-      <div class="content-footer">底部</div>
+      <Footer/>
     </div>
   </div>
 </template>
@@ -30,29 +28,14 @@ export default class Layout extends Vue {
   display: flex;
   color: white;
 
-  .navbar {
-    width: 200px;
-    background: blue;
-  }
-
   .content {
     width: 100%;
     display: flex;
     flex-direction: column;
 
-    &-header {
-      height: 40px;
-      background: green;
-    }
-
     &-main {
       flex: 1;
       color: black;
-    }
-
-    &-footer {
-      height: 25px;
-      background: purple;
     }
   }
 }
