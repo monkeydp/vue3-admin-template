@@ -28,4 +28,5 @@ coverage
 *.sw?
 
 # App
+auto-imports.d.ts
 components.d.ts
