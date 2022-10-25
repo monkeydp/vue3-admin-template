@@ -1,6 +1,8 @@
 <template>
   <div class="footer">
-    底部
+    <a-layout-footer style="text-align: center">
+      Project ©2018 Created by iPotato
+    </a-layout-footer>
   </div>
 </template>
 
@@ -14,7 +16,8 @@ export default class Footer extends Vue {
 
 <style lang="scss">
 .footer {
-  height: 25px;
-  background: purple;
+  .ant-layout-footer {
+    padding: 6px 15px;
+  }
 }
 </style>

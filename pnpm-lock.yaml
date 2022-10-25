@@ -2,11 +2,13 @@ lockfileVersion: 5.4
 
 specifiers:
   '@ant-design/icons-vue': ^6.1.0
+  '@types/lodash': ^4.14.186
   '@types/node': ^16.11.68
   '@vitejs/plugin-vue': ^3.1.2
   '@vitejs/plugin-vue-jsx': ^2.0.1
   '@vue/tsconfig': ^0.1.3
   ant-design-vue: 3.3.0-beta.3
+  lodash: ^4.17.21
   npm-run-all: ^4.1.5
   pinia: ^2.0.23
   sass: ^1.55.0
@@ -22,7 +24,9 @@ specifiers:
 
 dependencies:
   '@ant-design/icons-vue': 6.1.0_vue@3.2.41
+  '@types/lodash': 4.14.186
   ant-design-vue: 3.3.0-beta.3_vue@3.2.41
+  lodash: 4.17.21
   pinia: 2.0.23_l7r24p6nevbtlimqmqcwa3ouhu
   sass: 1.55.0
   typescript-ioc: 3.2.2
@@ -467,6 +471,10 @@ packages:
     dependencies:
       core-js: 3.25.5
       nanopop: 2.2.0
+    dev: false
+
+  /@types/lodash/4.14.186:
+    resolution: {integrity: sha512-eHcVlLXP0c2FlMPm56ITode2AgLMSa6aJ05JTTbYbI+7EMkCEE5qk2E41d5g2lCVTqRe0GnnRFurmlCsDODrPw==}
     dev: false
 
   /@types/node/16.11.68:

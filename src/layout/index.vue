@@ -1,14 +1,18 @@
 <template>
   <div class="layout">
-    <Navbar/>
+    <a-layout style="min-height: 100vh">
+      <Navbar/>
 
-    <div class="content">
-      <Header/>
-      <main class="content-main">
-        <router-view/>
-      </main>
-      <Footer/>
-    </div>
+      <a-layout>
+        <Header/>
+
+        <a-layout-content class="content">
+          <router-view/>
+        </a-layout-content>
+
+        <Footer/>
+      </a-layout>
+    </a-layout>
   </div>
 </template>
 
@@ -17,7 +21,7 @@ import {Component, Vue} from 'vue-facing-decorator'
 
 @Component({})
 export default class Layout extends Vue {
-
+  selectedKeys = [1]
 }
 </script>
 
@@ -26,17 +30,13 @@ export default class Layout extends Vue {
   width: 100%;
   height: 100%;
   display: flex;
-  color: white;
 
   .content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
-    &-main {
-      flex: 1;
-      color: black;
-    }
+    flex: 1;
+    padding: 5px;
+    margin: 5px 5px 0;
+    background: white;
+    height: 100%;
   }
 }
 </style>

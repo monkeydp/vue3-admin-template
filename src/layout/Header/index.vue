@@ -1,6 +1,8 @@
 <template>
   <div class="header">
-    顶部栏
+    <a-layout-header class="layout-header">
+      <Breadcrumb/>
+    </a-layout-header>
   </div>
 </template>
 
@@ -14,7 +16,15 @@ export default class Header extends Vue {
 
 <style lang="scss">
 .header {
-  height: 40px;
-  background: green;
+  .layout-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 48px;
+    line-height: 48px;
+    padding: 0;
+    background: white;
+  }
 }
 </style>
