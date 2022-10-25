@@ -28,5 +28,6 @@ coverage
 *.sw?
 
 # App
+.env.local
 auto-imports.d.ts
 components.d.ts

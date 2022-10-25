@@ -1,7 +1,7 @@
 <template>
   <div class="navbar">
     <a-layout-sider v-model:collapsed="collapsed" collapsible>
-      <div class="navbar-header">我的项目</div>
+      <div class="navbar-header">{{ title }}</div>
 
       <a-menu
           v-model:selectedKeys="selectedKeys"
@@ -24,6 +24,8 @@ import {getTitle} from '@/router/RouteExt'
 
 @Component({})
 export default class Navbar extends Vue {
+
+  private title = import.meta.env.VITE_APP_TITLE
 
   private items: NavItemInfo[] = []
   private selectedKeys: string[] = []
